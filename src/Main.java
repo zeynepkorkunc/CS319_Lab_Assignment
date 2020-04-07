@@ -26,6 +26,8 @@ public class Main {
 
         System.out.println(sorted);
 
+        System.out.println("Successfully reverted in Git");
+
     }
 
 }
