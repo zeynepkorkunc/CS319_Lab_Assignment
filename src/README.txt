@@ -1,0 +1,1 @@
+Zeynep Korkunç 21702571
