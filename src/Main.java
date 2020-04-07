@@ -26,6 +26,34 @@ public class Main {
 
         System.out.println(sorted);
 
+        Player tom = new Player("Tom");
+        Player john = new Player("John");
+        Player james = new Player("James");
+        Player henry = new Player("Henry");
+
+        Die die = new Die();
+        
+        for(int i = 0; i < 5; i++){
+            int point = die.rollDie();
+            tom.addScore(point); 
+        }
+        for(int i = 0; i < 5; i++){
+            int point = die.rollDie();
+            john.addScore(point); 
+        }
+        for(int i = 0; i < 5; i++){
+            int point = die.rollDie();
+            james.addScore(point); 
+        }
+        for(int i = 0; i < 5; i++){
+            int point = die.rollDie();
+            henry.addScore(point); 
+        }
+
+        System.out.println("Tom has " + tom.getScore() + " points." );
+        System.out.println("John has " + john.getScore() + " points." );
+        System.out.println("James has " + james.getScore() + " points." );
+        System.out.println("Henry has " + henry.getScore() + " points." );
     }
 
 }
